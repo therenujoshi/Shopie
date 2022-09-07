@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Shopie",
+    "slug": "shopie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/transparent-shop-logo.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#48B600"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/transparent-shop.jpg",
+        "backgroundColor": "#48B600"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
