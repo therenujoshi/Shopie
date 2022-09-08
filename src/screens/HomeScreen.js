@@ -1,11 +1,15 @@
-import {View, Text} from 'native-base';
+import {Box, Text} from 'native-base';
 import React from 'react';
+import HomeProduct from '../components/HomeProducts';
+import HomeSearch from '../components/HomeSearch';
 
 const HomeScreen = ()=>{
     return (
-        <View>
-            <Text>HomeScreen</Text>
-        </View>
+        <Box flex={1}
+            bg={'emerald.200'} safeAreaTop>
+            <HomeSearch/>
+            <HomeProduct/>
+        </Box>
     );
 }
 

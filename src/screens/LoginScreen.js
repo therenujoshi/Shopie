@@ -3,7 +3,7 @@ import React from 'react';
 import {MaterialIcons, Ionicons} from '@expo/vector-icons';
 import { Pressable } from 'react-native';
 
-const LoginScreen = ()=>{
+const LoginScreen = ({navigation})=>{
     return (
         <Box flex={1} bg={'black'}>
             <Image flex={1} alt="Logo" 
@@ -34,8 +34,10 @@ const LoginScreen = ()=>{
            
                 </VStack>
                 <Button _pressed={{ bg:'black'}} my={30} w="40%" rounded={50} 
-                bg={'black'}>Login</Button>
-                <Pressable mt={4}>
+                bg={'black'}
+                        onPress={()=>navigation.navigate("Bottom")}
+                >Login</Button>
+                <Pressable mt={4} onPress={()=>navigation.navigate("Register")}>
                     <Text color={"danger.500"}>SIGN UP</Text>
                 </Pressable>
             </Box>
